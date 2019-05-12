@@ -15,36 +15,33 @@ public class App {
         }
     }
 
+
     public static int fibonacci2() {
 
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
+
+        if (N < 2) {
+            //tak
+            System.out.println(N);
+
+        } else {
+            //nie
+        }
         int A = 0;
         int B = 1;
         int C = 1;
         int K = 2;
+        while (K < N) {
+            A = B;
+            B = C;
+            C = A + B;
+            K++;
 
-        if (N < 2) {
-return N;
-            
+//NIe
 
-        } else {
-
-
-            while (K < N) {
-                A = B = C = A + B;
-
-                K++;
-
-            }
-
-        }
-System.out.println(C);
-return C;
-
-    }
-
-
+            System.out.println(C);
+        }}
 
 
         public static void main (String[]args )
